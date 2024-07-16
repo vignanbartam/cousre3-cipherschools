@@ -1,0 +1,33 @@
+package encapsulation;
+class A{
+	private int x = 20;
+	private double d = 30.0;
+	public int getX() {
+		return this.x;
+	}
+	public double getD() {
+		return this.d;
+	}
+	public void setA(int x) {
+		if(x>100) {
+		this.x=x;
+		}
+		else {
+			System.out.println("Below 100");
+		}
+	}
+	public void setD(double d) {
+		this.d=d;
+	}
+}
+
+public class Encapsulation {
+
+	public static void main(String[] args) {
+		A a=new A();
+System.out.println(a.getX());
+a.setA(101);
+System.out.println(a.getX());
+	}
+
+}
